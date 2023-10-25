@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('role')->default(0);
-            $table->string('captacha')->nullable();
+            $table->string('role')->nullable();
+            $table->string('status')->default('is_Active');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
