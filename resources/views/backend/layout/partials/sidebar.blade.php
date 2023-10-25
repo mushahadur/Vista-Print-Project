@@ -30,7 +30,7 @@
                                 class="feather icon-box"></i></span><span class="pcoded-mtext">Post</span></a>
                     <ul class="pcoded-submenu">
                         <li><a href="{{ route('post.index') }}">Manage Post</a></li>
-                        <li><a href="bc_button.html">Add Post</a></li>
+                        <li><a href="{{ route('post.create') }}">Add Post</a></li>
                     </ul>
                 </li>
             </ul>

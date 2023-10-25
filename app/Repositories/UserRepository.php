@@ -8,7 +8,7 @@ use App\Repositories\Interfaces\UserRepositoryInterface;
 
 class UserRepository implements UserRepositoryInterface {
     public function All(){
-        return User::all();
+        return User::orderBy('id', 'DESC')->get();
     }
 
       public function findById($id){

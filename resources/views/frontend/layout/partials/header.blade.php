@@ -108,24 +108,11 @@
                                 <a href="#" class="parent">Categories</a>
                                 <div class="dropdown-menu">
                                     <ul>
+                                        @foreach ($categories as $item)
                                         <li class="item">
-                                            <a href="blog-list-sidebar-left.html" title="Blog List (Sidebar Left)">Blog List (Sidebar Left)</a>
+                                            <a href="#" title="Blog List (Sidebar Left)">{{ $item->name }}</a>
                                         </li>
-                                        <li class="item">
-                                            <a href="blog-list-sidebar-left2.html" title="Blog List (Sidebar Left) 2">Blog List (Sidebar Left) 2</a>
-                                        </li>
-                                        <li class="item">
-                                            <a href="blog-list-sidebar-right.html" title="Category Blog (Right column)">Blog List (Sidebar Right)</a>
-                                        </li>
-                                        <li class="item">
-                                            <a href="blog-list-no-sidebar.html" title="Blog List (No Sidebar)">Blog List (No Sidebar)</a>
-                                        </li>
-                                        <li class="item">
-                                            <a href="blog-grid-no-sidebar.html" title="Blog Grid (No Sidebar)">Blog Grid (No Sidebar)</a>
-                                        </li>
-                                        <li class="item">
-                                            <a href="blog-detail.html" title="Blog Detail">Blog Detail</a>
-                                        </li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </li>
