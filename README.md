@@ -35,10 +35,28 @@ It is php 8.1.2 version
     - Users can register, login, and manage their profiles. 
     - Implement middleware for user authentication and authorization to ensure secure access to certain features.
 
-2. Several Types of Image: 
+    | SI No   | Name    |    Email              | Role      | Status      | Action       |
+    | ------- | --------| --------------------- | --------------| ------ | -------------|
+    | 01 | Super Admin  | superadmin@gmail.com  | superadmin| Status     | ............ |
+    | 02 |  Admin  | admin@gmail.com  | admin| Status   |Edit   Delete  |
+    | 03 | Pulock  | Pulock@gmail.com  | oparetor| Status  |Edit   Delete   |
+    | 04 | Mushahedur  | Mushahedur@gmail.com  | Manager| Status     |Edit   Delete   |
+
+2. Create Category: 
+    - Category can show navbar . 
+    - Category Create , Read, Update , delete. and also status manage by admin.
+
+    | SI No   | Category Name    | Status                 | Action       |
+    | ------- | -----------------| --------------------- | -------------- | 
+    | 01 | Bussiness Card  |  is_Active     | Edit   Delete |
+    | 02 |  Pen    | is_Active     |Edit   Delete  |
+    | 03 | Cup   | is_Active     |Edit   Delete   |
+    | 04 | Phone Cover  |  is_Active |Edit   Delete   |
+
+3. Several Types of Image: 
     - Create a database of Vista-Print with attributes such as title, subtitle, category, and Several images. 
     - Implement a RESTful API 
     - information (GET request) and allow administrators to add, update, or delete  (POST, PUT, DELETE requests).
- 3. User Roles: 
+ 4. User Roles: 
     - Define user roles such as "User" and "Administrator." 
     - Admins have additional privileges like managing Image and user accounts.
