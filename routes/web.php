@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Backend\Admin\PostController;
 use App\Http\Controllers\Backend\Admin\UserController;
 use App\Http\Controllers\Backend\Admin\CategoryController;
@@ -12,9 +13,7 @@ use App\Http\Controllers\Backend\Admin\CategoryController;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.pages.home.index');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 
 /*

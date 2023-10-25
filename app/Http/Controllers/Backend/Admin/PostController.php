@@ -2,17 +2,22 @@
 
 namespace App\Http\Controllers\Backend\Admin;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Requests\PostRequest;
+use App\Http\Controllers\Controller;
 
 class PostController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    protected $postRepository;
+    public function __construct(PostRepositoryInterface $postRepository)
+    {
+         $this->postRepository = $postRepository;
+    }
+    
     public function index()
     {
-        //
+        // $users = $this->userRepository->All();
+       return view('backend.pages.post.index');
     }
 
     /**
@@ -20,15 +25,16 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.pages.post.create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(PostRequest $request)
     {
-        //
+        $this->postRepository->storeData($request);
+        return redirect(route('post.index'))->with('message', 'Post  create successfully.');
     }
 
     /**

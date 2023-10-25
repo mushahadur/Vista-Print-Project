@@ -1,6 +1,6 @@
 @extends('backend.layout.app')
 @section('title')
-    User
+    Post
 @endsection
 
 @section('content')
@@ -9,14 +9,14 @@
         <div class="col-4">
             <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
-                <li class="breadcrumb-item"><a href="#!">User Page</a></li>
+                <li class="breadcrumb-item"><a href="#!">Post Page</a></li>
             </ul>
         </div>
         <div class="col-8 d-flex justify-content-between">
             <h5 class="alert alert-success" role="alert">{{Session::get('message')}}</h5>
-            <button type="button" class="btn  btn-primary mx-3" data-toggle="modal" data-target="#userAddModal">
-                <i class="feather icon-user-plus mx-2"></i>Add a New User
-            </button>
+            <a href="{{ route('post.create') }}" class="btn  btn-primary mx-3" >
+                <i class="feather icon-user-plus mx-2"></i>Add a New Post
+            </a>
         </div>
     </div>
 
@@ -28,7 +28,7 @@
     <div class="col-xl-12">
         <div class="card">
             <div class="card-header d-flex justify-content-between">
-                <h4>User Manage Table</h4>
+                <h4>Post Manage Table</h4>
             </div>
             <div class="card-body table-border-style">
                 <div class="table-responsive">
@@ -44,7 +44,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($users as $item)
+                            {{-- @foreach ($users as $item)
                                 <tr>
                                     <td>{{$loop->iteration}}</td>
                                     <td>{{ $item->name }}</td>
@@ -62,7 +62,7 @@
                                         </form> 
                                     </td>
                                 </tr>
-                            @endforeach
+                            @endforeach --}}
                         </tbody>
                     </table>
                 </div>

@@ -22,56 +22,26 @@ class UserController extends Controller
        return view('backend.pages.user.index', compact('users'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(UserRequest $request)
     {
-        // dd($request->all());
         $this->userRepository->storeData($request);
         return redirect(route('user.index'))->with('message', 'User info create successfully.');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(User $user)
     {
         return view('backend.pages.user.edit')->with('user', $user);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(UserRequest $request, User $user)
     {
         $this->userRepository->updateData($request, $user);
         return redirect(route('user.index'))->with('message', 'User info Update successfully.');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(User $user)
     {
         $user->delete();
         return redirect(route('user.index'))->with('message', 'User Deleted successfully.');
-
     }
 }

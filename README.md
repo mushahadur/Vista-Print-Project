@@ -34,6 +34,9 @@ It is php 8.1.2 version
 1. User Registration and Authentication: 
     - Users can register, login, and manage their profiles. 
     - Implement middleware for user authentication and authorization to ensure secure access to certain features.
+<br>
+<h3 align="center">This is User Table</h3>
+<br>
 
     | SI No   | Name    |    Email              | Role      | Status      | Action       |
     | ------- | --------| --------------------- | --------------| ------ | -------------|
@@ -45,6 +48,10 @@ It is php 8.1.2 version
 2. Create Category: 
     - Category can show navbar . 
     - Category Create , Read, Update , delete. and also status manage by admin.
+
+<br>
+<h3 align="center">This is Category Table</h3>
+<br>
 
     | SI No   | Category Name    | Status                 | Action       |
     | ------- | -----------------| --------------------- | -------------- | 
