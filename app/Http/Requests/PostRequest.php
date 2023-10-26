@@ -21,16 +21,26 @@ class PostRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
-            'title' => ['required', 'string', 'max:255'],
-            'sub_title' => ['required', 'string', 'max:255'],
-            'tag' => ['required', 'string', 'max:255'],
-            'status' => ['required'],
-            'category' => ['required'],
-            'description' => ['required'],
-            'thumbnail' => ['required', 'mimes:jpeg,jpg,png,gif'],
-            'slide_image' => ['required', 'mimes:jpeg,jpg,png,gif'],
-            'header_image' => ['required', 'mimes:jpeg,jpg,png,gif'],
+        $rules = [
+            'title' => 'required', 'string', 'max:255',
+            'sub_title' => 'required', 'string', 'max:255',
+            'tag' => 'required', 'string', 'max:255',
+            'status' => 'required',
+            'category_id' => 'required',
+            'description' => 'required',
         ];
+            if ($this->getMethod() == 'POST') {
+                $rules += ['thumbnail' => 'required |image|mimes:jpeg,png,jpg,gif,svg'];
+                $rules += ['slide_image' => 'required |image|mimes:jpeg,png,jpg,gif,svg'];
+                $rules += ['header_image' => 'required |image|mimes:jpeg,png,jpg,gif,svg'];
+            }
+            else{
+                $rules += ['thumbnail' => 'image|mimes:jpeg,png,jpg,gif,svg'];
+                $rules += ['slide_image' => 'image|mimes:jpeg,png,jpg,gif,svg'];
+                $rules += ['header_image' => 'image|mimes:jpeg,png,jpg,gif,svg'];
+            }
+
+        return $rules;
+
     }
 }

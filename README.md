@@ -6,6 +6,7 @@
 - [Installing  Project](#installing)
 - [Objective  ](#objective)
 - [Key Features](#features)
+- [Work Procedure](#work_flow)
 
 ### About Project <a name="about"></a>
 VistaPrint has helped small business owners, entrepreneurs and dreamers create custom designs and professional marketing. Our online printing services are intended to help you find custom products you need – business cards, promotional marketing and more – to create a look you love.
@@ -21,7 +22,8 @@ It is php 8.1.2 version
 - php artisan migrate:fresh --seed
 - npm install
 - npm run dev
-
+- php artisan serve
+- if Login to Admin Panel ->Gmail:superadmin@gmail.com || Password:12345678
 
 <hr>
 
@@ -36,14 +38,14 @@ It is php 8.1.2 version
     - Implement middleware for user authentication and authorization to ensure secure access to certain features.
 <br>
 <h3 align="center">This is User Table</h3>
-<br>
 
-    | SI No   | Name    |    Email              | Role      | Status      | Action       |
-    | ------- | --------| --------------------- | --------------| ------ | -------------|
-    | 01 | Super Admin  | superadmin@gmail.com  | superadmin| Status     | ............ |
-    | 02 |  Admin  | admin@gmail.com  | admin| Status   |Edit   Delete  |
-    | 03 | Pulock  | Pulock@gmail.com  | oparetor| Status  |Edit   Delete   |
-    | 04 | Mushahedur  | Mushahedur@gmail.com  | Manager| Status     |Edit   Delete   |
+
+| SI No   | Name    |    Email              | Role      | Status      | Action       |
+| ------- | --------| --------------------- | --------------| ------ | -------------|
+| 01 | Super Admin  | superadmin@gmail.com  | superadmin| Status     | ............ |
+| 02 |  Admin  | admin@gmail.com  | admin| Status   |Edit   Delete  |
+| 03 | Pulock  | Pulock@gmail.com  | oparetor| Status  |Edit   Delete   |
+| 04 | Mushahedur  | Mushahedur@gmail.com  | Manager| Status     |Edit   Delete   |
 
 2. Create Category: 
     - Category can show navbar . 
@@ -51,14 +53,14 @@ It is php 8.1.2 version
 
 <br>
 <h3 align="center">This is Category Table</h3>
-<br>
 
-    | SI No   | Category Name    | Status                 | Action       |
-    | ------- | -----------------| --------------------- | -------------- | 
-    | 01 | Bussiness Card  |  is_Active     | Edit   Delete |
-    | 02 |  Pen    | is_Active     |Edit   Delete  |
-    | 03 | Cup   | is_Active     |Edit   Delete   |
-    | 04 | Phone Cover  |  is_Active |Edit   Delete   |
+
+| SI No   | Category Name    | Status                 | Action       |
+| ------- | -----------------| --------------------- | --------------| 
+| 01 | Bussiness Card  |  is_Active     | Edit   Delete |
+| 02 |  Pen    | is_Active     |Edit   Delete  |
+| 03 | Cup   | is_Active     |Edit   Delete   |
+| 04 | Phone Cover  |  is_Active |Edit   Delete   |
 
 3. Several Types of Image: 
     - Create a database of Vista-Print with attributes such as title, subtitle, category, and Several images. 
@@ -67,3 +69,13 @@ It is php 8.1.2 version
  4. User Roles: 
     - Define user roles such as "User" and "Administrator." 
     - Admins have additional privileges like managing Image and user accounts.
+
+
+### Work Procedure <a name="work_flow"></a>
+
+- Login as a super admin 
+    - Gmail: superadmin@gmail.com
+    - Password: 12345678
+- Sign Up for other user 
+    - Gmail: must be Uniq
+    - Password: must be Eight Cherecters
