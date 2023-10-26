@@ -92,7 +92,7 @@
                 <div class="col-sm-2 col-md-2 d-flex align-items-center">
                     <div id="logo">
                         <a href="index-2.html">
-                            <img class="img-fluid" src="{{ asset('/') }}frontend/img/home/logo.png"  alt="mrk-logo" height="100" width="130">
+                            <img class="img-fluid" src="{{ asset('/') }}frontend/img/home/logo.png"  alt="mrk-logo" height="70" width="80">
                         </a>
                     </div>
                 </div>
@@ -124,43 +124,43 @@
                                             <div class="dropdown-menu dropdown-tab">
                                                 <ul>
                                                     <li class="item col-md-4 float-left">
-                                                        <span class="menu-title">Category Style</span>
+                                                        <span class="menu-title">Category 1</span>
                                                         <div class="menu-content">
                                                             <ul class="col">
                                                                 <li>
-                                                                    <a href="product-grid-sidebar-left.html">Product Grid (Sidebar Left)</a>
+                                                                    <a href="product-grid-sidebar-left.html">Sub Category 1</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="product-grid-sidebar-right.html">Product Grid (Sidebar Right)</a>
+                                                                    <a href="product-grid-sidebar-right.html">Sub Category 2</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="product-list-sidebar-left.html">Product List (Sidebar left) </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </li>
-                                                    <li class="item col-md-4 html  float-left">
-                                                        <span class="menu-title">Product Detail Style</span>
-                                                        <div class="menu-content">
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="product-detail.html">Product Detail (Sidebar Left)</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">Product Detail (Sidebar Right)</a>
+                                                                    <a href="product-list-sidebar-left.html">Sub Category 3</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                     </li>
                                                     <li class="item col-md-4 html  float-left">
-                                                        <span class="menu-title">Bonus Page</span>
+                                                        <span class="menu-title"> Category 2</span>
                                                         <div class="menu-content">
                                                             <ul>
                                                                 <li>
-                                                                    <a href="404.html">404 Page</a>
+                                                                    <a href="product-detail.html">Sub Category 11</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="about-us.html">About Us Page</a>
+                                                                    <a href="#">Sub Category 22</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item col-md-4 html  float-left">
+                                                        <span class="menu-title"> Category 3</span>
+                                                        <div class="menu-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="404.html">Sub Category 111</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="about-us.html">Sub Category 222</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -214,18 +214,6 @@
                                     <a class="register" href="{{ route('register') }}" rel="nofollow" title="Register Account">
                                         <i class="fa fa-user"></i>
                                         <span>Register Account</span>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a class="check-out" href="product-checkout.html" rel="nofollow" title="Checkout">
-                                        <i class="fa fa-check" aria-hidden="true"></i>
-                                        <span>Checkout</span>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="user-wishlist.html" title="My Wishlists">
-                                        <i class="fa fa-heart"></i>
-                                        <span>My Wishlists</span>
                                     </a>
                                 </div>
                             </div>

@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers\Backend\Admin;
 
+use App\Models\Post;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Requests\PostRequest;
 use App\Http\Controllers\Controller;
+use App\Repositories\Interfaces\PostRepositoryInterface;
 
 class PostController extends Controller
 {
@@ -16,8 +19,8 @@ class PostController extends Controller
     
     public function index()
     {
-        // $users = $this->userRepository->All();
-       return view('backend.pages.post.index');
+        $posts = $this->postRepository->All();
+       return view('backend.pages.post.index', compact('posts'));
     }
 
     /**
@@ -25,7 +28,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('backend.pages.post.create');
+        $category = Category::all();
+        return view('backend.pages.post.create', compact('category'));
     }
 
     /**
@@ -37,35 +41,27 @@ class PostController extends Controller
         return redirect(route('post.index'))->with('message', 'Post  create successfully.');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function edit(Post $post)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
+        $category = Category::all();
+        return view('backend.pages.post.edit', compact('category', 'post'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(PostRequest $request, Post $post)
     {
-        //
+        $this->postRepository->updateData($request, $post);
+        return redirect(route('post.index'))->with('message', 'Post info Update successfully.');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Post $post)
     {
-        //
+        $post->delete();
+        return redirect(route('post.index'))->with('message', 'Post Deleted successfully.');
     }
 }

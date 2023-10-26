@@ -8,7 +8,7 @@
                             <div class="block">
                                 <div class="block-content">
                                     <p class="logo-footer">
-                                        <img src="{{ asset('/') }}frontend/img/home/logo.png" alt="img" height="100" width="120">
+                                        <img src="{{ asset('/') }}frontend/img/home/logo.png" alt="img" height="80" width="90">
                                     </p>
                                     <p class="content-logo">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
                                         ut labore

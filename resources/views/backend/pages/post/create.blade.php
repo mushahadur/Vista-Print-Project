@@ -28,7 +28,7 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="form-group">
-                                <label class="floating-label" for="name">Titel Name</label>
+                                <label class="floating-label" for="name">Title Name</label>
                                 <input type="text" class="form-control" name="title"
                                     placeholder="Please Enter the Titel">
                                 @error('title')
@@ -61,13 +61,12 @@
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="inputState">Category</label>
-                                <select id="inputState" class="form-control" name="category">
-                                    <option  value="Category">Select Category</option>
-                                    <option value="admin">Category 1</option>
-                                    <option value="manager">Category 2</option>
-                                    <option value="operator">Category 3</option>
+                                <select id="inputState" class="form-control" name="category_id">
+                                    @foreach ($category as $item)
+                                        <option  value="{{ $item->id }}">{{ $item->name }}</option>
+                                    @endforeach
                                 </select>
-                                @error('category')
+                                @error('category_id')
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
