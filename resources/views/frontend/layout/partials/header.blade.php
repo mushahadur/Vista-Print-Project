@@ -11,7 +11,7 @@
             <!-- logo -->
             <div class="mobile-logo pb-3">
                 <a href="index-2.html">
-                    <img class="logo-mobile img-fluid" src="{{ asset('/') }}frontend/img/home/logo-mobie.png" alt="mrk-logo" height="60" width="80">
+                    <img class="logo-mobile img-fluid" src="{{ asset('/') }}frontend/img/logo-mobie.png" alt="mrk-logo" height="60" width="80">
                 </a>
             </div>
 
@@ -44,7 +44,7 @@
                                     <tr>
                                         <td class="product-image">
                                             <a href="product-detail.html">
-                                                <img src="{{ asset('/') }}frontend/img/product/5.jpg" alt="Product">
+                                                <img src="{{ asset('/') }}frontend/img/5.jpg" alt="Product">
                                             </a>
                                         </td>
                                         <td>
@@ -92,7 +92,7 @@
                 <div class="col-sm-2 col-md-2 d-flex align-items-center">
                     <div id="logo">
                         <a href="index-2.html">
-                            <img class="img-fluid" src="{{ asset('/') }}frontend/img/home/logo.png"  alt="mrk-logo" height="70" width="80">
+                            <img class="img-fluid" src="{{ asset('/') }}frontend/img/logo.png"  alt="mrk-logo" height="70" width="80">
                         </a>
                     </div>
                 </div>
@@ -232,7 +232,7 @@
                                             <tr>
                                                 <td class="product-image">
                                                     <a href="product-detail.html">
-                                                        <img src="{{ asset('/') }}frontend/img/product/5.jpg" alt="Product">
+                                                        <img src="{{ asset('/') }}frontend/img/5.jpg" alt="Product">
                                                     </a>
                                                 </td>
                                                 <td>

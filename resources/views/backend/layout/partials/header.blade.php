@@ -48,7 +48,7 @@
             <li>
                 <div class="dropdown drp-user">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="{{ asset('/') }}backend/assets/images/user/p.png"
+                        <img src="{{ asset('/') }}backend/assets/images/p.png"
                             class="img-radius mx-3" alt="User-Profile-Image" height="40" width="40">
                         <span>{{Auth::user()->name}}<i class="fa fa-chevron-down m-l-5"></i></span>
                     </a>
