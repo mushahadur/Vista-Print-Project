@@ -15,7 +15,7 @@
                     <div id="tiva-slideshow" class="nivoSlider">
                         
                         <a href="#">
-                            <img class="img-responsive" src="{{ asset('/') }}frontend/img/home/home1-banner1.jpg" title="#caption1" alt="Slideshow image">
+                            <img class="img-responsive" src="{{ asset('/') }}frontend/img/slider1.jpg" title="#caption1" alt="Slideshow image">
                         </a>
                         @foreach ($posts as $item)
                             <a href="#">
